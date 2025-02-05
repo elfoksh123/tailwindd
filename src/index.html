@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind First Task</title>
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="flex justify-between py-5 px-5">
+      <div id="logo" class="w-200 cursor-pointer">
+        <img src="images/asset0.png" alt="logo" />
+      </div>
+      <ul id="links" class="flex justify-between items-center">
+        <li class="link cursor-pointer">Home   </li>
+        <li class="link cursor-pointer">About  </li>
+        <li class="link cursor-pointer">Contact</li>
+      </ul>
+      <div id="mode">
+        <button
+          class="btn dark:bg-slate-800 dark:hover:bg-slate-500 dark:text-white"
+          id="btnDark"
+        >
+          Dark Mode
+        </button>
+        <!-- <button class="btn  hidden" id="btnLight">Dark Mode</button> -->
+      </div>
+    </nav>
+
+    <!-- carsoul -->
+    <section id="carsoul">
+      <div class="bg-red-300 w-full relative">
+        <img
+          src="images/1.jpg"
+          alt="first"
+          class="object-cover object-center w-full rounded-lg h-96" 
+          id="main_img"
+        />
+        <button id="btnRight" class="carsoul_btn_right">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button id="btnLeft" class="carsoul_btn_left">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tool">
+      <div
+        class="w-full min-h-48 flex flex-col justify-center items-center align-middle bg-slate-300 text-black dark:bg-slate-900 dark:border dark:border-white dark:text-white"
+      >
+        <div class="my-2 f3lex flex-col justify-center items-center align-middle">
+          <h2 class="text-5xl text-center">Tools</h2>
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </p>
+        </div>
+        <div
+          class="cards grid sm:grid-cols-12 md:grid-cols-4 lg:grid-cols-3 gap-2 my-5"
+        >
+          <div class="card relative">
+            <h4 class="text-xl">Product</h4>
+            <span>_________</span>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <span
+              class="h-7 w-7 rounded-full bg-red-300 absolute -top-3 left-[50] flex justify-center align-middle items-center"
+            >
+              <i class="fa-solid fa-anchor text-black"></i>
+            </span>
+          </div>
+          <div class="card relative">
+            <h4 class="text-xl">Product</h4>
+            <span>_________</span>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <span
+              class="h-7 w-7 rounded-full bg-red-300 absolute -top-3 left-[50] flex justify-center align-middle items-center"
+            >
+              <i class="fa-solid fa-h-square text-black"></i>
+            </span>
+          </div>
+          <div class="card relative">
+            <h4 class="text-xl">Product</h4>
+            <span>_________</span>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <span
+              class="h-7 w-7 rounded-full bg-red-300 absolute -top-3 left-[50] flex justify-center align-middle items-center"
+            >
+              <i class="fa-solid fa-jar-wheat text-black"></i>
+            </span>
+          </div>
+          <div class="card relative">
+            <h4 class="text-xl">Product</h4>
+            <span>_________</span>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <span
+              class="h-7 w-7 rounded-full bg-red-300 absolute -top-3 left-[50] flex justify-center align-middle items-center"
+            >
+              <i class="fa-solid fa-ladder-water text-black"></i>
+            </span>
+          </div>
+          <div class="card relative">
+            <h4 class="text-xl">Product</h4>
+            <span>_________</span>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <span
+              class="h-7 w-7 rounded-full bg-red-300 absolute -top-3 left-[50] flex justify-center align-middle items-center"
+            >
+              <i class="fa-solid fa-icicles text-black"></i>
+            </span>
+          </div>
+          <div class="card relative">
+            <h4 class="text-xl">Product</h4>
+            <span>_________</span>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <span
+              class="h-7 w-7 rounded-full bg-red-300 absolute -top-3 left-[50] flex justify-center align-middle items-center"
+            >
+              <i class="fa-solid fa-wrench text-black"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+     <footer>
+      <div class="bg-slate-800 flex justify-between items-center p-5">
+        <div class="apple flex gap-2 px-5 py-2 bg-slate-600 text-white mx-5 my-5 rounded-md">
+          <i class="fa-brands fa-apple fa-3x"></i>
+          <div class="flex flex-col">
+            <p class="text-xs">Avaliable on the</p>
+            <h5>App Store</h5>
+          </div>
+        </div>
+        <ul class="social flex gap-4 ml-3">
+          <li>
+            <i class="fa-brands fa-facebook text-white text-xs"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-twitter text-white  text-xs"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-linkedin-in text-white  text-xs"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-youtube-square text-white  text-xs"></i>
+          </li>
+        </ul>
+      </div>
+     </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

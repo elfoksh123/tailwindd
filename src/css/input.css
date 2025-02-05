@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+.link{
+    @apply mx-3 text-xs hover:text-blue-300 dark:text-slate-300 dark:hover:text-green-400 transition-all duration-500;
+}
+
+.btn {
+    @apply py-2 px-3 rounded-md bg-slate-200 hover:bg-slate-400 cursor-pointer text-xs transition-all duration-500;
+}
+
+.carsoul_btn_right{
+    @apply rounded-full w-7 h-7 bg-slate-900 text-white hover:scale-110 dark:bg-slate-400 dark:hover:bg-slate-200  hover:bg-slate-400 duration-500 flex justify-center items-center mr-3 absolute right-0 top-52;
+}
+
+.carsoul_btn_left{
+    @apply rounded-full w-7 h-7 bg-slate-900 text-white hover:scale-110 dark:bg-slate-400 dark:hover:bg-slate-200  hover:bg-slate-400 duration-500 flex justify-center items-center ml-3 absolute left-0 top-52
+}
+
+.card {
+    @apply  w-full rounded-md border p-5 mt-3 bg-slate-100 text-black border-black flex flex-col justify-center items-center align-middle;
+}
